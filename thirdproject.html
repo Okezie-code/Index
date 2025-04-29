@@ -1,34 +1,37 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <title>Search</title>
-   
-    </head>
-    <body>
-        <form action="https://www.google.com/search">
-            <label>
-                All these words:
-            <input type="text" name="as_q"
-            </label><br>
+<head>
+    <meta charset="UTF8">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="designs.css">
+</head>
+<body>
+    <a href="http://169.254.122.40:8080/project.html" class="google-search">Google Search</a>
 
-            <label>
-                These exact words or phrase:
-            <input type="text" name="as_epq"
-            </label><br>
+    <h1>Advanced Search</h1>
 
-            <label>
-                Any of these words:
-            <input type="text" name="as_oq"
-            </label><br>
+    <form action="https://www.google.com/search" class="advanced-form">
+        <div class="form-group">
+            <label for="as_q>">All these words:</label>
+            <input type="text" name="as_q" id="as_q">
+        </div>
 
-            <label>
-                None of these words:
-            <input type="text" name="as_eq"
-            </label><br>
+        <div class="form-group">
+            <label for="as_q>">This exact word or phrase:</label>
+            <input type="text" name="as_epq" id="as_epq">
+        </div>
 
-            <input type="submit" value="Advanced Search">
-            
-        </form>
+        <div class="form-group">
+            <label for="as_q>">Any of these words:</label>
+            <input type="text" name="as_oq" id="as_oq">
+        </div>
 
-    </body>
+        <div class="form-group">
+            <label for="as_q>">None of these words:</label>
+            <input type="text" name="as_eq" id="as_eq">
+        </div>
+        <input type="submit" value="Advanced Search">
+    </form>
+</body>
 </html>
+        
